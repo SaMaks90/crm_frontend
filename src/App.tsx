@@ -1,5 +1,12 @@
-import React from "react";
+import AuthProvider from "./provider/auth-provider";
+import Routes from "./routes";
 
-const App = () => <h1>Hello CRM FrontEnd</h1>;
+const App = () => {
+  return (
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
+  );
+};
 
 export default App;

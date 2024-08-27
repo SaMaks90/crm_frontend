@@ -1,0 +1,17 @@
+@import "src/variables";
+
+.signInForm {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.signInInput {
+  border-radius: 5px;
+  padding: 2px;
+  font-family: "Moderustic", sans-serif;
+  font-size: 22px;
+  border: 1px solid $borderColor;
+}
