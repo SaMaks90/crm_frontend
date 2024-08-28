@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.wrapper {
+  background: $headerBackground;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}

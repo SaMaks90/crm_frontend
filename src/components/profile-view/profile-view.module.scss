@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.profileWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.profileAboutUser {
+  text-decoration: none;
+  color: $textColorHeader;
+  transition: 1s color;
+
+  &:hover {
+    color: $textColorHeaderHover;
+  }
+}
+
+.profileName {
+  font-size: 22px;
+  font-weight: 600;
+}
+.profileEmail {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.profileExitButton {
+  border: none;
+  background: none;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.profileExitImage {
+  width: 32px;
+  height: 32px;
+}

@@ -24,6 +24,18 @@ const Routes = () => {
           element: <h2>Dashboard</h2>,
         },
         {
+          path: "/customer",
+          element: <h2>Customers</h2>,
+        },
+        {
+          path: "/item",
+          element: <h2>Items</h2>,
+        },
+        {
+          path: "/profile",
+          element: <h2>Profile</h2>,
+        },
+        {
           path: "/logout",
           element: <SignOut />,
         },

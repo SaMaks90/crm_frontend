@@ -4,19 +4,24 @@ import { useCookies } from "react-cookie";
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [cookies, setCookies, removeCookie] = useCookies(["token"]);
+  const [cookies, setCookies, removeCookie] = useCookies(["token", "user"]);
   const setToken = (newToken) => {
     if (newToken) {
       setCookies("token", newToken, {
-        expires: new Date(new Date().getTime() + 7200),
+        expires: new Date(new Date().getTime() + 7200000),
       });
     } else {
       removeCookie("token");
+      removeCookie("user");
     }
   };
 
+  const setUser = (user) => {
+    setCookies("user", user);
+  };
+
   const contextValue = useMemo(
-    () => ({ token: cookies.token, setToken }),
+    () => ({ token: cookies.token, user: cookies.user, setToken, setUser }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [cookies],
   );

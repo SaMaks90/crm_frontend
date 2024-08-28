@@ -1,3 +1,4 @@
 import { signIn, signOut } from "./auth";
+import { getUser } from "./user";
 
-export { signIn, signOut };
+export { signIn, signOut, getUser };

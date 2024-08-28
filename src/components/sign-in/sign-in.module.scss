@@ -1,5 +1,13 @@
 @import "src/variables";
 
+.wrapperSignInForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .signInForm {
   width: 400px;
   display: flex;
@@ -9,9 +17,31 @@
 }
 
 .signInInput {
-  border-radius: 5px;
-  padding: 2px;
+  border-radius: $borderRadiusNormal;
+  padding: 5px;
   font-family: "Moderustic", sans-serif;
   font-size: 22px;
   border: 1px solid $borderColor;
+  outline: none;
+}
+
+.signInInputErrorValidation {
+  border: 1px solid red;
+}
+
+.signInSubmit {
+  padding: 5px;
+  font-size: 22px;
+  border: none;
+  background: $buttonColor;
+  border-radius: $borderRadiusNormal;
+  transition:
+    0.5s background-color,
+    0.5s ease-in-out box-shadow;
+
+  &:hover {
+    background: $buttonColorHover;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #bbb8b8;
+  }
 }
