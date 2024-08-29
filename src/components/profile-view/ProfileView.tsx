@@ -13,8 +13,6 @@ const ProfileView = () => {
     navigate(0);
   };
 
-  console.log(user);
-
   return (
     <section className={styles.profileWrapper}>
       <Link to={"profile"} className={styles.profileAboutUser}>

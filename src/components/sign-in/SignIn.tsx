@@ -32,7 +32,7 @@ const SignIn = () => {
         setToken(result.token);
         let user = await getUser(result.token);
         setUser(user);
-        navigate("/dashboard", { replace: true });
+        navigate("../dashboard", { replace: true });
       }
       setTokenError(result.message);
     } catch (e) {

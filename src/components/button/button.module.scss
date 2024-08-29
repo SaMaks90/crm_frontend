@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.button {
+  padding: 12px;
+  font-size: 22px;
+  border: none;
+  background: $buttonColor;
+  border-radius: $borderRadiusNormal;
+  text-transform: capitalize;
+  transition:
+    0.5s background-color,
+    0.5s ease-in-out box-shadow;
+
+  &:hover {
+    background: $buttonColorHover;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #bbb8b8;
+  }
+}
