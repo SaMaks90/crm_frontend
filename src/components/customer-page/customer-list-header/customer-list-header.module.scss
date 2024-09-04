@@ -1,0 +1,31 @@
+.customerListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.customerListHeaderTitle {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.companyName {
+  width: 300px;
+}
+
+.companyInn {
+  width: 220px;
+}
+
+.companyTaxSystem {
+  width: 120px;
+}
+
+.companyType {
+  width: 150px;
+}

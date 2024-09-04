@@ -1,12 +1,13 @@
 @import "../../variables";
 
-.wrapperCustomer {
+.wrapperCustomerPage {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  gap: 20px;
 }
 
-.customerHeader {
+.customerOptions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -3,9 +3,10 @@ import { ErrorMessage } from "./error-message/ErrorMessage";
 import { Header } from "./header/Header";
 import { ProfileView } from "./profile-view/ProfileView";
 import { HeaderNavigation } from "./header-navigation/HeaderNavigation";
-import { Customer } from "./customer/Customer";
 import { Button } from "./button/Button";
 import { Filter } from "./filter/Filter";
+import { Loading } from "./loading/Loading";
+import { CustomerPage } from "./customer-page/CustomerPage";
 
 export {
   SignIn,
@@ -13,7 +14,8 @@ export {
   Header,
   ProfileView,
   HeaderNavigation,
-  Customer,
+  CustomerPage,
   Button,
   Filter,
+  Loading,
 };

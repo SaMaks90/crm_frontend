@@ -1,12 +1,7 @@
 @import "../../variables";
 
-.wrapperFilter {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
 .filterInput {
   font-size: 22px;
   padding: 10px;
+  border-radius: $borderRadiusNormal;
 }

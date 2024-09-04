@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { useAuth } from "../provider";
 import { ProtectedRoute } from "./ProtectedRoute";
-import { Customer, SignIn } from "../components";
+import { CustomerPage, SignIn } from "../components";
 import { SignOut } from "../components/sign-out/SignOut";
 
 const Routes = () => {
@@ -25,7 +25,7 @@ const Routes = () => {
         },
         {
           path: "/customer",
-          element: <Customer />,
+          element: <CustomerPage />,
         },
         {
           path: "/item",

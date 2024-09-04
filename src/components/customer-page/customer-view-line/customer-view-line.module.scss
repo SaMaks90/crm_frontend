@@ -1,0 +1,43 @@
+@import "../../../variables";
+
+.customerViewLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid gray;
+  height: 40px;
+  align-items: center;
+  border-radius: $borderRadiusNormal;
+  transition:
+    1s ease-in-out border-color,
+    1s ease-in-out background-color;
+
+  &:hover {
+    border: 2px solid green;
+    cursor: pointer;
+    background: #dadada;
+  }
+}
+
+.customerViewField {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.customerViewFieldName {
+  width: 300px;
+}
+
+.customerViewFieldTaxSystem {
+  width: 120px;
+}
+
+.customerViewFieldCompanyType {
+  width: 150px;
+}
+
+.customerViewFieldInn {
+  width: 220px;
+}
