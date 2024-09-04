@@ -1,4 +1,10 @@
-import { ICustomer, Tax, CompanyType } from "./customer";
+import { ICustomer, Tax, CompanyType, ICustomerFilterInput } from "./customer";
 import { RequestStatus } from "./status";
 
-export { type ICustomer, RequestStatus, CompanyType, Tax };
+export {
+  type ICustomer,
+  RequestStatus,
+  CompanyType,
+  Tax,
+  type ICustomerFilterInput,
+};

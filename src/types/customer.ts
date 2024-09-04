@@ -22,3 +22,9 @@ export enum CompanyType {
   "IE" = "individual entrepreneur" as any,
   "LLC" = "limited liability company" as any,
 }
+
+export interface ICustomerFilterInput {
+  text: string;
+  taxSystem: Tax | any;
+  companyType: CompanyType | any;
+}
