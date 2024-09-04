@@ -1,7 +1,7 @@
 import styles from "./customer-header-option.module.scss";
-import { Filter, Button } from "../../";
+import { Filter, Button, ModalWindow, CreateCustomerForm } from "../../";
 import { CompanyType, ICustomerFilterInput, Tax } from "../../../types";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
 interface ICustomerHeaderOptionProps {
   setCustomerFilterInput: Dispatch<SetStateAction<ICustomerFilterInput>>;
@@ -32,6 +32,8 @@ const CustomerHeaderOption = ({
     }
   };
 
+  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+
   return (
     <section className={styles.customerOptions}>
       <Filter name={"name"} func={handlerChangeInputValue} />
@@ -40,8 +42,15 @@ const CustomerHeaderOption = ({
 
       <Button
         title={"add customer"}
-        functionClick={() => console.log("click")}
+        functionClick={() => setIsOpenModal((prevState) => !prevState)}
       />
+
+      <ModalWindow
+        setIsOpenModalWindow={setIsOpenModal}
+        isOpenModalWindow={isOpenModal}
+      >
+        <CreateCustomerForm />
+      </ModalWindow>
     </section>
   );
 };

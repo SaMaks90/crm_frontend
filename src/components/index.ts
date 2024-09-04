@@ -7,6 +7,8 @@ import { Button } from "./button/Button";
 import { Filter } from "./filter/Filter";
 import { Loading } from "./loading/Loading";
 import { CustomerPage } from "./customer-page/CustomerPage";
+import { ModalWindow } from "./modal-window/ModalWindow";
+import { CreateCustomerForm } from "./create-customer-form/CreateCustomerForm";
 
 export {
   SignIn,
@@ -18,4 +20,6 @@ export {
   Button,
   Filter,
   Loading,
+  ModalWindow,
+  CreateCustomerForm,
 };
